@@ -30,6 +30,7 @@ def load_dataset_names(task, split):
 def expand_dataset_to_prompts(datasets):
     print("PROMPT SELECTION")
     prompt_names = list(DATA_SPLITS_SIZES.keys())
+    print(prompt_names)
     # select prompts corresponding the the selected datasets
     selected_prompts = filter(
         lambda x: any([x.startswith(item) for item in datasets]),
