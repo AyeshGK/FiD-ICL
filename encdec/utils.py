@@ -4,7 +4,7 @@ import json
 import random
 import numpy as np
 import torch
-from task_configs.t0_config import DATA_SPLITS_SIZES
+from task_configs.t1_config import DATA_SPLITS_SIZES
 
 from meta_data import ROOT_DIR
 

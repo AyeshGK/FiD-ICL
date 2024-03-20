@@ -1,8 +1,10 @@
 {
 	"train": [
-		"train_dataset"
+		"train_dataset_1",
+        "train_dataset_2"
 	],
 	"eval": [
-		"eval_dataset"
+        "eval_dataset_1",
+		"eval_dataset_2"
 	]
 }
