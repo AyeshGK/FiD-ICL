@@ -13,6 +13,7 @@ class FiDPretrainDataForEncDec(T0PretrainDataForEncDec):
         assert self.is_training # only support training for now 
 
         n_task = len(self.datasets)
+        print(f"Number of tasks: {n_task}")
         task_sampler = RandomSampler(range(n_task))
         batch_size = self.config.k + self.config.m # number of support and query examples, the collate function will separate them later
         collate_fn = partial(train_collate_fn, k=self.config.k, m=self.config.m)
