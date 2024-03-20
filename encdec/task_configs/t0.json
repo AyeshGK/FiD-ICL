@@ -1,8 +1,0 @@
-{
-	"train": [
-		"train_dataset"
-	],
-	"eval": [
-		"eval_dataset"
-	]
-}
