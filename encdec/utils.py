@@ -6,6 +6,8 @@ import numpy as np
 import torch
 from task_configs.t0_config import DATA_SPLITS_SIZES
 
+from meta_data import ROOT_DIR
+
 # copied from metaicl
 
 def load_data(base_dir, datasets, split, k, seed):
@@ -20,7 +22,7 @@ def load_data(base_dir, datasets, split, k, seed):
     return data
 
 def load_dataset_names(task, split):
-    with open(os.path.join("task_configs", task+".json"), "r") as f:
+    with open(os.path.join(ROOT_DIR,"task_configs", task+".json"), "r") as f:
         config = json.load(f)
     datasets = config[split]
     return datasets

@@ -1,7 +1,7 @@
 {
     "model": "Salesforce/codet5-small",
     "data_dir": "../t0/data_small",
-    "out_dir": "checkpoints/fid/t5-xl/",
+    "out_dir": "checkpoints/fid/codet5/",
     "optimizer": "adamw",
     "max_input_length": 512,
     "max_output_length": 64,
