@@ -18,7 +18,7 @@ def run(logger, config):
     trainer.pad_token_id = tokenizer.pad_token_id
 
     # get prompt data
-    datasets = load_dataset_names("t0", "train")
+    datasets = load_dataset_names("t1", "train_dataset")
     prompt_identifiers = expand_dataset_to_prompts(datasets)
     
     train_data = FiDPretrainDataForEncDec(
