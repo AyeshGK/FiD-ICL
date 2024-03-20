@@ -11,7 +11,7 @@ from data_t0pretrain import T0PretrainDataForEncDec
 class FiDPretrainDataForEncDec(T0PretrainDataForEncDec):
     def load_dataloader(self):
         assert self.is_training # only support training for now 
-
+        print(self.datasets)
         n_task = len(self.datasets)
         print(f"Number of tasks: {n_task}")
         task_sampler = RandomSampler(range(n_task))

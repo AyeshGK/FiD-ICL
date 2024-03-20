@@ -13,6 +13,7 @@ class T0PretrainDataForEncDec(MultiTaskDataForEncDec):
         return len(self.all_input_ids)
 
     def load_raw_data(self):
+        print("LOAD RAW DATA")
         self.all_input_ids, self.all_target_ids = [], []
         self.meta_data = [] # marks the start and end index of each dataset
 
