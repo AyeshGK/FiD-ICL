@@ -36,7 +36,6 @@ class FiDPretrainDataForEncDec(T0PretrainDataForEncDec):
             return input_prefix + _input[:max_input_length-len(input_prefix)] \
                 + output_prefix + _output[:max_output_length-len(output_prefix)]
 
-        # TODO(qinyuany): re-think what's the best way of doing this
         input_prefix = self.tokenizer("# Input #", add_special_tokens=False)["input_ids"]
         output_prefix = self.tokenizer(" # Output #", add_special_tokens=False)["input_ids"]
 
